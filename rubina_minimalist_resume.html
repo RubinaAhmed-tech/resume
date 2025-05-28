@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rubina Ahmed Mahar - Minimalist Resume</title>
+  <title>Rubina Ahmed Mahar - Minimalist Resume (Dark Mode)</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -14,10 +13,17 @@
       box-sizing: border-box;
     }
 
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background: #ffffff;
-      color: #1c1c1e;
+      background: #121212;
+      color: #f0f0f0;
       padding: 40px;
     }
 
@@ -42,12 +48,13 @@
     h1 {
       font-size: 24px;
       margin-bottom: 5px;
+      color: #ffffff;
     }
 
     h2 {
       font-size: 14px;
       font-weight: 400;
-      color: #777;
+      color: #cccccc;
       margin-bottom: 20px;
     }
 
@@ -55,14 +62,16 @@
       font-weight: 600;
       font-size: 16px;
       margin: 20px 0 10px;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #333;
       padding-bottom: 4px;
+      color: #fbbf24;
     }
 
     ul {
       list-style: none;
       font-size: 14px;
       line-height: 1.6;
+      padding-left: 0;
     }
 
     .main-section {
